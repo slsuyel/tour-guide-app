@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
                       {
                         term: "Website",
                         definition:
-                          "refers to Panchagarh Tour Guide, accessible from https://panchagarhtourguide.gov.bd/",
+                          "refers to Panchagarh Tour Guide",
                       },
                       { term: "You", definition: "means the individual accessing or using the Service." },
                     ].map((item, index) => (

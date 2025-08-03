@@ -7,17 +7,14 @@ import Provider from "@/components/Provider/MainProvider";
 const tiroBanglaFont = Tiro_Bangla({
   variable: "--font-bangla",
   subsets: ["bengali"],
-  weight: ["400"], 
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
   title: "পঞ্চগড় ভ্রমণ গাইড | Panchagarh Tour Guide",
   description: "পঞ্চগড় জেলার দর্শনীয় স্থান, আবাসন, খাবার, পরিবহন এবং অন্যান্য পর্যটন তথ্যসমূহ একসাথে জানুন।",
-  verification: {
-    google: "ANItNYqQDazN0dV4pu2og6_UlDQsExze00cb7OPVUUM"
-  }
+  
 };
-
 
 export default function RootLayout({
   children,
@@ -26,6 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bn">
+      <head>
+        {/* Custom Meta Tag */}
+        <meta
+          name="simpledcver"
+          content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJhcGkucGFuY2hhZ2FyaHRvdXJndWlkZS54eXoiLCJleHAiOjE3NTQ3ODQwMDB9.coGa-dvNT-8yaB3Zf6HKNxQ2UokALbrIbvkx2qvKucw"
+        />
+      </head>
       <body className={`${tiroBanglaFont.variable} antialiased font-bangla`}>
         <Provider>{children}</Provider>
       </body>

@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /dashboard/*
+Disallow: /login
+Disallow: /register
+
+# Host
+Host: https://panchagarhtourguide.gov.bd
+
+# Sitemaps
+Sitemap: https://panchagarhtourguide.gov.bd/sitemap.xml
